@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Nombre Herrería | Portones, rejas y estructuras a medida</title>
+  <meta name="description" content="Trabajos de herrería a medida: portones, rejas, barandas, escaleras y estructuras metálicas. Mira nuestros trabajos y pide tu cotización.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Big+Shoulders+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <a class="marca" href="#inicio">Tu Nombre Herrería</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#trabajos">Trabajos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Cómo trabajo</a>
+      <a class="boton boton-chico" href="#cotizar">Cotizar</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+    <section class="portada" id="inicio">
+      <div class="placa">
+        <h1>Hierro que se queda.</h1>
+        <p class="portada-texto">
+          Portones, rejas, barandas, escaleras y estructuras hechas a medida,
+          soldadas y terminadas en mi taller. Mira los trabajos y pide tu cotización.
+        </p>
+        <div class="acciones">
+          <a class="boton" href="#cotizar">Pedir cotización</a>
+          <a class="boton boton-claro" href="#trabajos">Ver trabajos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA (filtro solo con CSS) -->
+    <section class="seccion" id="trabajos">
+      <div class="contenedor">
+        <h2>Trabajos realizados</h2>
+        <p class="intro">Cada pieza se mide, se corta y se suelda a la medida de tu espacio.</p>
+      </div>
+
+      <div class="contenedor galeria">
+        <input type="radio" name="filtro" id="f-todos" checked>
+        <input type="radio" name="filtro" id="f-portones">
+        <input type="radio" name="filtro" id="f-rejas">
+        <input type="radio" name="filtro" id="f-barandas">
+        <input type="radio" name="filtro" id="f-estructuras">
+
+        <div class="filtros" role="group" aria-label="Filtrar trabajos">
+          <label for="f-todos">Todos</label>
+          <label for="f-portones">Portones</label>
+          <label for="f-rejas">Rejas</label>
+          <label for="f-barandas">Barandas</label>
+          <label for="f-estructuras">Estructuras</label>
+        </div>
+
+        <!--
+          CÓMO AGREGAR TUS FOTOS:
+          1. Guarda la foto en la carpeta img/ (ej: img/porton-1.jpg)
+          2. Cambia el src, el alt y el texto del figcaption.
+          3. data-cat debe ser: portones, rejas, barandas o estructuras.
+          Para agregar otro trabajo, copia y pega un bloque <figure>.
+        -->
+        <div class="grilla">
+          <figure class="trabajo" data-cat="portones">
+            <img src="img/porton-1.jpg" alt="Portón corredizo de hierro" loading="lazy" onerror="this.remove()">
+            <figcaption><strong>Portón corredizo</strong><span>Hierro y tubo cuadrado</span></figcaption>
+          </figure>
+
+          <figure class="trabajo" data-cat="rejas">
+            <img src="img/reja-1.jpg" alt="Reja de seguridad para ventana" loading="lazy" onerror="this.remove()">
+            <figcaption><strong>Reja de seguridad</strong><span>Diseño con forja decorativa</span></figcaption>
+          </figure>
+
+          <figure class="trabajo" data-cat="barandas">
+            <img src="img/baranda-1.jpg" alt="Baranda de escalera en hierro" loading="lazy" onerror="this.remove()">
+            <figcaption><strong>Baranda de escalera</strong><span>Pasamanos y balaustres</span></figcaption>
+          </figure>
+
+          <figure class="trabajo" data-cat="estructuras">
+            <img src="img/estructura-1.jpg" alt="Estructura metálica para techo" loading="lazy" onerror="this.remove()">
+            <figcaption><strong>Techo metálico</strong><span>Estructura con perfiles</span></figcaption>
+          </figure>
+
+          <figure class="trabajo" data-cat="portones">
+            <img src="img/porton-2.jpg" alt="Portón batiente de dos hojas" loading="lazy" onerror="this.remove()">
+            <figcaption><strong>Portón batiente</strong><span>Dos hojas con cerradura</span></figcaption>
+          </figure>
+
+          <figure class="trabajo" data-cat="rejas">
+            <img src="img/reja-2.jpg" alt="Reja para puerta" loading="lazy" onerror="this.remove()">
+            <figcaption><strong>Reja de puerta</strong><span>Con marco reforzado</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="seccion seccion-oscura" id="servicios">
+      <div class="contenedor">
+        <h2>Qué hago</h2>
+        <ul class="servicios">
+          <li>
+            <h3>Portones</h3>
+            <p>Corredizos, batientes y levadizos, para casas y negocios.</p>
+          </li>
+          <li>
+            <h3>Rejas y protecciones</h3>
+            <p>Ventanas, puertas y cerramientos para dar seguridad sin perder estilo.</p>
+          </li>
+          <li>
+            <h3>Barandas y escaleras</h3>
+            <p>Interiores y exteriores, rectas o con forja decorativa.</p>
+          </li>
+          <li>
+            <h3>Estructuras metálicas</h3>
+            <p>Techos, marquesinas, pérgolas y soportes a medida.</p>
+          </li>
+          <li>
+            <h3>Muebles de hierro</h3>
+            <p>Mesas, bases, estantes y piezas únicas para tu espacio.</p>
+          </li>
+          <li>
+            <h3>Reparación y pintura</h3>
+            <p>Soldadura, cambio de cerraduras y repintado con anticorrosivo.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROCESO (aquí sí es una secuencia real) -->
+    <section class="seccion" id="proceso">
+      <div class="contenedor">
+        <h2>Cómo trabajo</h2>
+        <ol class="pasos">
+          <li>
+            <h3>Me cuentas qué necesitas</h3>
+            <p>Por el formulario o por WhatsApp. Si puedes, envía fotos y medidas aproximadas.</p>
+          </li>
+          <li>
+            <h3>Visita y medidas</h3>
+            <p>Voy a tu casa o negocio, tomo medidas exactas y definimos el diseño.</p>
+          </li>
+          <li>
+            <h3>Cotización clara</h3>
+            <p>Recibes el precio con materiales y mano de obra, y el tiempo de entrega.</p>
+          </li>
+          <li>
+            <h3>Fabricación e instalación</h3>
+            <p>Lo hago en el taller, lo pinto y lo instalo en tu espacio.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- COTIZACIÓN -->
+    <section class="seccion seccion-cotizar" id="cotizar">
+      <div class="contenedor cotizar">
+        <div class="cotizar-texto">
+          <h2>Pide tu cotización</h2>
+          <p>Llena el formulario y te respondo lo antes posible. Si tienes prisa, escríbeme directo por WhatsApp.</p>
+          <a class="boton boton-claro" href="https://wa.me/18090000000?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20herrer%C3%ADa"
+             target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+
+        <!--
+          IMPORTANTE: para que el formulario envíe correos necesitas un servicio.
+          Opción fácil y gratis: https://formspree.io  (crea un formulario y pega aquí tu URL en action).
+        -->
+        <form class="formulario" action="https://formspree.io/f/TU_CODIGO" method="POST">
+          <label>Nombre
+            <input type="text" name="nombre" autocomplete="name" required>
+          </label>
+
+          <label>Teléfono o WhatsApp
+            <input type="tel" name="telefono" autocomplete="tel" required>
+          </label>
+
+          <label>Tipo de trabajo
+            <select name="tipo" required>
+              <option value="">Elige una opción</option>
+              <option>Portón</option>
+              <option>Reja o protección</option>
+              <option>Baranda o escalera</option>
+              <option>Estructura metálica</option>
+              <option>Mueble de hierro</option>
+              <option>Reparación</option>
+              <option>Otro</option>
+            </select>
+          </label>
+
+          <label>Medidas aproximadas (opcional)
+            <input type="text" name="medidas" placeholder="Ej: 3 m de ancho por 2 m de alto">
+          </label>
+
+          <label>Cuéntame qué necesitas
+            <textarea name="mensaje" rows="4" required></textarea>
+          </label>
+
+          <button class="boton" type="submit">Enviar solicitud</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <strong>Tu Nombre Herrería</strong>
+      <span>Tel: 809-000-0000</span>
+      <span>Tu ciudad, tu país</span>
+      <span>Lunes a sábado, 8:00 a 17:00</span>
+    </div>
+  </footer>
+
+</body>
+</html>
